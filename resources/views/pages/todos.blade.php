@@ -6,7 +6,14 @@
         <div class="mb-8 mt-4">
             <input type="text" placeholder="Search todos..." class="w-full px-6 py-4 bg-gray-100 rounded-full focus:bg-white focus:outline-none transition-colors duration-300 text-xl font-bold">
         </div>
-
+        <div class="flex items-center mb-4">
+            <label class="mr-2">
+                <input type="checkbox" name="done" class="mr-1"> Done
+            </label>
+            <label>
+                <input type="checkbox" name="not_done" class="mr-1"> Not Done
+            </label>
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
             <div class="bg-gray-100 rounded-2xl shadow-md p-4 h-64 flex flex-col items-center justify-center text-gray-400 transform transition-transform duration-300 hover:scale-105">
                 <span class="text-8xl font-bold">+</span>
