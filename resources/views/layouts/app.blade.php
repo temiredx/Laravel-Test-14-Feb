@@ -8,10 +8,12 @@
   @vite('resources/css/app.css')
 </head>
 
-<body>
-  @include('components.header')
+<body class="@if (Request::is('login') || Request::is('join')) overflow-hidden @else overflow-auto @endif">
+  <div class="container mx-auto">
+    @include('components.header')
+  </div>
 
-  <div class="container">
+  <div class="container mx-auto pt-12">
     @yield('content')
   </div>
 

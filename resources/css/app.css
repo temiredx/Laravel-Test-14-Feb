@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @source "../views";
+
+* {
+  user-select: none;
+}

@@ -19,8 +19,12 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('pages.login');
-});
+})->name('login');
 
 Route::get('/join', function () {
     return view('pages.join');
-});
+})->name('join');
+
+Route::get('/task', function () {
+    return view('pages.task');
+})->name('task');
